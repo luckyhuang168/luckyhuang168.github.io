@@ -1,12 +1,22 @@
 <!DOCTYPE html>
+
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Github Website</title>
-</head>
-<body>
-  <h1>My First Website</h1>
-</body>
+    <head>
+        <meta charset="utf-8" />
+        <title>Website Time</title>
+    </head>
+    <body>
+        <h2>目前時間是 : </h2>
+        <h2 id="mytime"></h2>
+        <script>
+            showTime(); // 呼叫 showTime()函數
+
+            function showTime() {
+                var d = new Date(); // 取得日期物件
+                document.getElementById("mytime").innerHTML =
+                       d.toLocaleDateString() + " " + d.toLocaleTimeString(); // 將目前日期時間轉成字串後輸出
+                setTimeout(showTime, 1000);    // 1 秒後執行 showTime()
+            }
+        </script>
+    </body>
 </html>

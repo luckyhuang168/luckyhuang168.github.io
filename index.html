@@ -3,20 +3,32 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>Website Time</title>
+        <title>全面進化(Transcendence)</title>
     </head>
     <body>
-        <h2>目前時間是 : </h2>
-        <h2 id="mytime"></h2>
-        <script>
-            showTime(); // 呼叫 showTime()函數
+        <header>
+            <h1>AIOT 全面進化(Transcendence)</h1>
+            <nav>
+                <i>&lt;&lt;上一頁> &nbsp;&nbsp;下一頁&gt;&gt;</i>
+            </nav>
+        </header>
+        <aside>
+            <h5>相關文章</h5>
+            認識 AI
+            認識 IOT
+            認識 AIOT
+        </aside>
+        <article>
+            <section>
+                <h3>AIOT 全面進化(Transcendence)項目</h3>
+            </section>
+            <section>AIOT 全面進化(Transcendence)行動步驟</section>
+        </article>
+        <footer>
+            <i>AIOT 全面進化(Transcendence)行動中心<br>
+               Copyright & copy : Lucky Huang All Rights Reserved.
+            </i>
 
-            function showTime() {
-                var d = new Date(); // 取得日期物件
-                document.getElementById("mytime").innerHTML =
-                       d.toLocaleDateString() + " " + d.toLocaleTimeString(); // 將目前日期時間轉成字串後輸出
-                setTimeout(showTime, 1000);    // 1 秒後執行 showTime()
-            }
-        </script>
+        </footer>
     </body>
 </html>
